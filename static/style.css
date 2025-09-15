@@ -1,0 +1,37 @@
+/* static/style.css - estilo simple, limpio y profesional */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#0ea5a4;
+  --muted:#9aa6b2;
+  --text:#e6eef6;
+  --radius:10px;
+  --container:1000px;
+}
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial;}
+body{
+  margin:0;background:linear-gradient(180deg,var(--bg),#071027);color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:32px auto;padding:0 18px;}
+.topbar{background:rgba(10,14,20,0.5);backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.05rem;}
+nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-size:0.95rem;}
+nav a:hover{color:var(--text)}
+h1,h2{color:var(--text);margin:8px 0 18px;}
+main.container{background:transparent;padding:26px 18px;}
+form{background:var(--card);padding:18px;border-radius:12px;box-shadow: 0 6px 18px rgba(2,6,23,0.6);max-width:600px;}
+label{display:block;margin-bottom:10px;color:var(--muted);font-size:0.95rem;}
+input{display:block;width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);margin-top:6px;}
+button{margin-top:12px;padding:10px 14px;border:0;border-radius:8px;background:var(--accent);color:#022;cursor:pointer;font-weight:600;}
+.flashbox{margin-bottom:12px;}
+.flash{padding:8px 12px;border-radius:8px;margin-bottom:8px;}
+.flash.info{background:#eef7ff;color:#09324f;}
+.flash.success{background:#e6fffa;color:#013233;}
+.flash.danger{background:#ffe9e9;color:#3b0a0a;}
+.footer{color:var(--muted);text-align:center;padding:18px 0;margin-top:40px;}
+img{max-width:220px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#fff;}
+table.users-table{width:100%;border-collapse:collapse;background:var(--card);margin-top:16px;border-radius:8px;overflow:hidden;}
+table.users-table th, table.users-table td{padding:10px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03);color:var(--muted);}
+table.users-table thead{background:rgba(255,255,255,0.02);}

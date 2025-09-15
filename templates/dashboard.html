@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <h2>Panel</h2>
+  <p>Bienvenido, {{ current_user.full_name }} ({{ current_user.email }})</p>
+  {% if current_user.twofa_secret %}
+    <p>2FA: <strong>Activo</strong></p>
+  {% else %}
+    <p>2FA: <strong>Inactivo</strong> — <a href="{{ url_for('enable_2fa') }}">Activar ahora</a></p>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Activar 2FA{% endblock %}
+{% block content %}
+  <h2>Activar 2FA</h2>
+  <p>Escanea este QR con Google Authenticator o Authy:</p>
+  <img src="{{ qr_uri }}" alt="QR 2FA">
+  <p>Luego escribe el código que te muestra la app para activar:</p>
+  <form method="post">
+    <label>Código
+      <input name="token" required>
+    </label>
+    <button type="submit">Activar 2FA</button>
+  </form>
+{% endblock %}

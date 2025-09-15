@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Verificar 2FA{% endblock %}
+{% block content %}
+  <h2>Verificación 2FA</h2>
+  <p>Introduce el código que muestra tu app (Google Authenticator / Authy).</p>
+  <form method="post">
+    <label>Código (6 dígitos)
+      <input name="token" required>
+    </label>
+    <button type="submit">Verificar</button>
+  </form>
+{% endblock %}

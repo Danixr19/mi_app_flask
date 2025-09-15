@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Registro{% endblock %}
+{% block content %}
+<h2>Registro</h2>
+<form method="post">
+  <label>Nombre completo
+    <input name="full_name" required>
+  </label>
+  <label>Documento
+    <input name="document_number">
+  </label>
+  <label>Teléfono
+    <input name="phone">
+  </label>
+  <label>Email
+    <input name="email" type="email" required>
+  </label>
+  <label>Contraseña
+    <input name="password" type="password" required>
+  </label>
+  <button type="submit">Registrar</button>
+</form>
+{% endblock %}
